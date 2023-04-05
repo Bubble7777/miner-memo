@@ -116,7 +116,6 @@ export default function Home() {
       </Head>
       <nav className={styles.nav}>
         <div className={styles.logo}>BNBTEAM</div>
-
         <div>
           <button onClick={connectWallet} className={styles.button}>
             {!walletConnected ? 'Connect Wallet' : 'disconnect'}
@@ -124,7 +123,7 @@ export default function Home() {
         </div>
       </nav>
       <main className={styles.main}>
-        <div>
+        <div className={styles.main_container}>
           <img src={'/preview.gif'} alt="gif" width={300} height={300} />
           <Button
             mint={mint}
